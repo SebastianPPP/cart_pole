@@ -9,14 +9,14 @@ This project implements the classic **Q-learning algorithm** (Reinforcement Lear
 * **Q-learning:** A value-based algorithm that uses a **Q-table** to store optimal actions for observed states.
 * **State Discretization (Quantization):** The process of converting the continuous state space (position, angle, velocities) into a finite and manageable number of discrete "bins."
 * **Bellman Equation:** The core principle behind the Q-table update, used to iteratively estimate the maximum cumulative future reward.
-* **$\epsilon$-greedy:** The strategy for balancing **exploration** (random actions) and **exploitation** (utilizing the best-known action).
+* **epsilon-greedy:** The strategy for balancing **exploration** (random actions) and **exploitation** (utilizing the best-known action).
 
 ---
 
 ## Training Structure
 
 * **Hyperparameters:** Key parameters were defined, such as the **learning rate** (`LEARNING_RATE`), **discount factor** (`DISCOUNT_FACTOR`), and the **exploration decay rate** (`EPSILON_DECAY_RATE`).
-* **Discretization:** The state space was divided into $20 \times 20 \times 20 \times 20$ discrete bins.
+* **Discretization:** The state space was divided into [20 20 20 20] discrete bins.
 * **Training Loop:** The agent runs for **20,000 episodes**, making decisions and updating the Q-table according to the Bellman equation in each step.
 
 ---
